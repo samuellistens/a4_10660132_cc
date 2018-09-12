@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char** argv) {
+	
+	int a,b;
+	cout<<"Enter the first number: ";
+	cin>>a;
+	cout<<"Enter the second number: ";
+	cin>>b;
+	
+	int ab=min(a,b);
+	
+	
+	int GCD=1;
+	for  (int i=1;i<=ab;i++)
+	{
+		if (a%i==0 && a%i==0)
+		{
+		   GCD=max(GCD,i);
+		}
+	}
+	cout<<"Greatest common divisor is: "<<GCD;
+	
+	return 0;
+}
